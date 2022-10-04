@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'TheBlacklist';
+	src: url('./TheBlacklist.eot');
+	src: local('TheBlacklist'), url('./TheBlacklist.woff') format('woff'), url('./TheBlacklist.ttf') format('truetype');
+}
+
+
+.h1{
+    font-family: 'TheBlacklist' !important;
+    
+}
+
+.h4{
+    font-family: 'TheBlacklist' !important;
+}
+
+html,body{
+    background-color: antiquewhite;
+    text-align: center;
+    height:100%;
+    width:100%;
+    font-family: 'TheBlacklist' !important;
+}
+
+img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    height:200px;
+    max-width:100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "title title title"
+    "carphoto car carphoto2"
+    "owlphoto owl owlphoto2"
+    "footer footer footer";
+}
+
+@media screen and (max-width:900px) { /*tablet*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+        grid-template-columns: minmax(20px,auto) minmax(20px,auto);
+        grid-template-areas: 
+        "title title "
+        "carphoto car" 
+        "carphoto2 car"
+        "owlphoto owl" 
+        "owlphoto2 owl"
+        "footer footer";
+    }
+}
+
+@media screen and (max-width:600px) { /*smartphone*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr auto;
+        grid-template-columns: minmax(20px,auto);
+        grid-template-areas: 
+        "title "
+        "car" 
+        "carphoto" 
+        "carphoto2"
+        "owl" 
+        "owlphoto"
+        "owlphoto2"
+        "footer";
+    }
+}
+
+.grid-title{
+    grid-area:title;
+}
+
+.grid-photo-car{
+    grid-area:carphoto;
+}
+
+.grid-photo-car2{
+    grid-area:carphoto2;
+}
+
+.grid-car{
+    grid-area:car;
+    margin: auto;
+}
+
+.grid-photo-owl{
+    grid-area:owlphoto;
+}
+
+.grid-photo-owl2{
+    grid-area:owlphoto2;
+}
+
+.grid-owl{
+    grid-area:owl;
+    margin: auto;
+}
+
+.grid-footer{
+    grid-area:footer;
+}
+
+.flex-container{
+    display: flex;
+    background-color: rgb(205, 227, 253);
+}
+ 
+.flex-container > * {
+    width:100%;
+}
+
+.main{
+    text-align: left;
+}
+
+.creator{
+    text-align: right;
+}

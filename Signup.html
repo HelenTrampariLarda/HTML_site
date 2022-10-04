@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta charset= "utf-8">
+        <title>Page 4</title>
+    </head>
+
+    <body>
+        <div class="title_form"><h1>Sign up for up to date information about AI tecnhology</h1></div>
+        <br>
+
+        <div class="last-grid">
+            <div class="last1">
+                <h2 id="h2here">Sign up form</h2>
+                <br>
+
+                <form id="contact" action="mailto:p3180186@aueb.gr" method="post" autocomplete="on">
+                    <fieldset>
+                        Full Name:<input placeholder="Your Name" type="text" required>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        Username:<input placeholder="Your username" type="text" required>
+                        <br>
+                        <br>
+                        Password:<input placeholder="Your password" type="password" minlength="8" id="password" required>
+                        <details>
+                            <summary>Password requirements </summary>
+                            <p> Password has to contain at least one number and one letter. The length must be at least 6 characters.</p>
+                        </details>
+                        <br>
+                        Confirm password:<input placeholder="Your password again" type="password" id="confirm" required>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        Date of birth:<input type="date" id="birthday" required>
+                        <br>
+                        <br>
+                        Country:<input placeholder="Your country" id="country" type="text" required>
+                        <details>
+                            <summary>Country requirements </summary>
+                            <p> The name of the country can not contain numbers, only letters.</p>
+                        </details>
+                        <br>
+                        Address:<input placeholder="Your address" type="text">
+                        <br>
+                        <br>
+                        Email:<input placeholder="Your Email Address" type="email" required>
+                        <br>
+                        <br>
+                        Telephone:<input placeholder="Your phone number" type="tel" pattern="[0-9]{10}" required>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <button name="submit" type="submit" id="contact-submit" onclick="elenacheck()" data-submit="...Sending">Submit</button>
+                </form>
+            </div>
+            <br>
+            <br>
+
+            <div class="last2">
+                <h2 id="h2edw">Questionnaire</h2>
+
+                <form id="contact2" action="mailto:p3180186@aueb.gr" method="post" autocomplete="on">
+                    <fieldset>
+                            1.What are your hobbies? <br>
+                            <input list="hobbies" id="hobbie">
+
+                            <datalist id="hobbies">
+                                <option value="Basketball">
+                                <option value="Football">
+                                <option value="Tennis">
+                                <option value="Rugby">
+                                <option value="Cycling">
+                                <option value="Running">
+                                <option value="Dansing">
+                                <option value="Singing">
+                                <option value="Other">    
+                            </datalist>
+                            <br>
+                            <br>
+                            2.What are the things that inspire you in life?<br><textarea placeholder="Type here" required></textarea>
+                            <br>
+                            3.What are your skills as a person?<br><textarea placeholder="Type here" required></textarea>
+                            <br>
+                            4.Is there any special skills-gifts that you have?If yes, what is it?<br><textarea placeholder="Type here"></textarea>
+                            <br>
+                            <br>
+                            5.Have you done any sports?<br>
+                            <input type="checkbox" name="yes" value="Yes">Yes<br>
+                            <input type="checkbox" name="no" value="No">No<br>
+                            <br>
+                            6.If yes, what are the sports that you have done?<br><textarea placeholder="Type here" ></textarea>
+                            <br>
+                            7.What knd of music do you listen to?<br><textarea placeholder="Type here" required></textarea>
+                            <br>
+                            <br>
+                            8. Do you play any musical instruments? <br>
+                            <input type="checkbox" name="yes" value="Yes">Yes<br>
+                            <input type="checkbox" name="no" value="No">No<br>
+                            <br>
+                            9.If yes, what musical instrument do you play?<br><textarea placeholder="Type here"></textarea>
+                            <br>
+                            10.What did you wanted to be as a teenager?<br><textarea placeholder="Type here" required></textarea>
+                            <br>
+                            <br>
+                            11.What do you value most in life? <br>
+                            <input list="values" id="value">
+
+                            <datalist id="values">
+                                <option value="Love">
+                                <option value="Friends">
+                                <option value="Family">
+                                <option value="Money">
+                                <option value="Career">
+                            </datalist>
+
+                    </fieldset>
+                    <br>
+                        
+                </form>
+                
+            </div>
+            
+        </div>
+
+        <div class="grid-footer">
+            <h4><a href="index.html">Back to main page</a></h4>
+        </div>
+        <script src = "page4.js"></script> 
+
+    </body>
+</html>

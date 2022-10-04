@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'TheBlacklist';
+	src: url('./TheBlacklist.eot');
+	src: local('TheBlacklist'), url('./TheBlacklist.woff') format('woff'), url('./TheBlacklist.ttf') format('truetype');
+}
+
+
+.h1{
+    font-family: 'TheBlacklist' !important;
+    
+}
+
+.h4{
+    font-family: 'TheBlacklist' !important;
+}
+
+html,body{
+    background-color: antiquewhite;
+    font-family: 'TheBlacklist' !important;
+}
+
+.title{
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height:200px;
+    max-width:100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "title title title"
+    "photo4 desc4 photo6"
+    "photo5 desc5 photo6"
+    "footer . .";
+}
+
+@media screen and (max-width:900px) { /*tablet*/
+    .grid-container{
+        display: grid;
+        grid-template-rows:auto 1fr 1fr auto;
+        grid-template-columns: minmax(20px,auto) minmax(20px,auto);
+        grid-template-areas: 
+        "title title"
+        "desc4 photo4"
+        "desc5 photo5"
+        "footer photo6";
+    }
+
+    .grid-footer{
+        padding-top: 30%;
+    }
+
+}
+
+@media screen and (max-width:600px) { /*smartphone*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+        grid-template-columns: minmax(20px,auto);
+        grid-template-areas: 
+        "title"
+        "desc4"
+        "photo4"
+        "desc5" 
+        "photo5"
+        "photo6"
+        "footer";
+    }
+    .grid5{
+        padding-right: 30%;
+        width:500px;
+    }
+    .grid2{
+        padding-right: 30%;
+    }
+}
+
+.grid-title{
+    grid-area: title;
+    text-align: center;
+}
+
+.grid1{
+    grid-area:photo4;
+}
+
+.grid2{
+    grid-area: desc4;
+    margin:auto;
+}
+
+.grid3{
+    grid-area: photo5;
+}
+
+.grid4{
+    grid-area:desc5;
+    margin:auto;
+}
+
+.grid5{
+    grid-area:photo6;
+    margin:auto;
+
+}
+
+.grid-footer{
+    grid-area:footer;
+
+}
+
+.flex-container{
+    display:flex;
+}
